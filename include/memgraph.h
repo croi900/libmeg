@@ -19,8 +19,8 @@ struct Memnode_s{
 typedef struct Memnode_s Memnode;
 
 struct Memgraph_s{
-    Memnode nodes[MAX_NEURONS];
-    uint64_t numnodes;
+    Memnode* nodes[MAX_NEURONS];
+    uint64_t num_nodes;
 };
 
-typedef struct Memgraph_s* Memgraph;
+typedef struct Memgraph_s Memgraph;
